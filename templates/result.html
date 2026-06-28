@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Recommendation</title>
+</head>
+<body>
+
+    <h1>Recommended Study Path</h1>
+
+    <h2>Degree</h2>
+    <p>{{ result.degree }}</p>
+
+    <h2>Recommended Branches</h2>
+    <ul>
+        {% for branch in result.branches %}
+        <li>{{ branch }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Alternative Options</h2>
+    <ul>
+        {% for option in result.alternatives %}
+        <li>{{ option }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Future Career Opportunities</h2>
+    <ul>
+        {% for career in result.careers %}
+        <li>{{ career }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

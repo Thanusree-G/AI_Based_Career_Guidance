@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Career Guidance</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f5f7fa;
+        }
+
+        .container{
+            width:500px;
+            margin:50px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        input, select{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:15px;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            background:#27aae1;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Career Assessment Form</h1>
+
+<form action="/predict" method="POST">
+
+<label>Education Level</label>
+
+<select name="education" required>
+    <option value="">Select Education</option>
+
+    <option>10th Class</option>
+
+    <option>Intermediate MPC</option>
+    <option>Intermediate BiPC</option>
+    <option>Intermediate MEC</option>
+    <option>Intermediate CEC</option>
+    <option>Intermediate HEC</option>
+
+    <option>Diploma - CSE</option>
+    <option>Diploma - ECE</option>
+    <option>Diploma - EEE</option>
+    <option>Diploma - Mechanical</option>
+    <option>Diploma - Civil</option>
+
+    <option>B.Sc</option>
+    <option>B.Com</option>
+    <option>BBA</option>
+    <option>BA</option>
+
+    <option>B.Tech CSE</option>
+    <option>B.Tech AI & DS</option>
+    <option>B.Tech IT</option>
+    <option>B.Tech ECE</option>
+    <option>B.Tech EEE</option>
+    <option>B.Tech Mechanical</option>
+    <option>B.Tech Civil</option>
+
+    <option>M.Tech</option>
+    <option>MCA</option>
+    <option>MBA</option>
+    <option>M.Sc</option>
+
+</select>
+
+<label>Coding Skill (1-10)</label>
+<input type="number" name="coding">
+
+<label>Math Skill (1-10)</label>
+<input type="number" name="math">
+
+<label>Communication Skill (1-10)</label>
+<input type="number" name="communication">
+
+<label>Interest Area</label>
+
+<select name="interest" required>
+
+    <option value="">Select Interest</option>
+
+    <option>Artificial Intelligence</option>
+    <option>Machine Learning</option>
+    <option>Data Science</option>
+    <option>Software Development</option>
+    <option>Web Development</option>
+    <option>Mobile App Development</option>
+
+    <option>Cyber Security</option>
+    <option>Cloud Computing</option>
+    <option>DevOps</option>
+
+    <option>Networking</option>
+    <option>Embedded Systems</option>
+    <option>Robotics</option>
+    <option>IoT</option>
+
+    <option>Defence Services</option>
+    <option>Indian Army</option>
+    <option>Indian Navy</option>
+    <option>Indian Air Force</option>
+
+    <option>Government Jobs</option>
+    <option>Banking</option>
+
+    <option>Teaching</option>
+    <option>Research</option>
+
+    <option>Business Management</option>
+    <option>Entrepreneurship</option>
+
+    <option>Graphic Designing</option>
+    <option>Digital Marketing</option>
+
+</select>
+
+<button type="submit">
+Get Career Recommendation
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
